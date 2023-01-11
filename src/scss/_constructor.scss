@@ -276,6 +276,10 @@
         opacity: 0;
       }
     }
+
+    @media (max-width: $breakpoint992) {
+      background-color: var(--lightGrayColor);
+    }
   }
 
   // .constructor__sport-input
@@ -356,25 +360,6 @@
     }
   }
 
-  // .constructor__btn
-
-  &__btn {
-    display: inline-flex;
-    align-items: center;
-    column-gap: rem(9);
-    padding: rem(12) rem(27) rem(12) rem(24);
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: rem(17);
-    line-height: rem(21);
-    color: var(--whiteColor);
-  }
-
-  // .constructor__btn--disabled
-
-  &__btn--disabled {
-    background-color: var(--grayColor);
-  }
 }
 
 .constructor-1--1 {}

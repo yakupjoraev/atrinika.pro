@@ -1,0 +1,86 @@
+.constructor {
+
+  // .constructor__genders
+
+  &__genders {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: em(24);
+    margin-bottom: em(50);
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // .constructor__gender
+
+  &__gender {
+    border-radius: 8px;
+    background-color: var(--whiteColor);
+
+    &:hover {
+
+      .constructor__gender-name {
+        color: var(--orangeColor);
+      }
+    }
+
+    @media (max-width: $breakpoint992) {
+      border: 1px solid #E4E4E4;
+    }
+  }
+
+  // .constructor__gender-input
+
+  &__gender-input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -10;
+
+    &:checked~.constructor__gender-label {
+
+      .constructor__gender-name {
+        color: var(--orangeColor);
+      }
+
+    }
+  }
+
+  // .constructor__gender-label
+
+  &__gender-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: rem(20);
+    border-radius: 0px 0px 8px 8px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &__gender-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: rem(200);
+    min-height: rem(200);
+    max-height: rem(200);
+  }
+
+  // .constructor__gender-img
+
+  &__gender-img {}
+
+  // .constructor__gender-name
+
+  &__gender-name {
+    padding: em(15) 0 em(20);
+    border-top: 1px solid #E4E4E4;
+    font-weight: 500;
+    font-size: rem(24);
+    line-height: rem(29);
+    color: var(--blackColor);
+  }
+}

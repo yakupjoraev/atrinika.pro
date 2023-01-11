@@ -1,0 +1,37 @@
+  // .constructor__btn
+
+  .constructor__btn {
+    display: inline-flex;
+    align-items: center;
+    column-gap: rem(9);
+    padding: rem(12) rem(27) rem(12) rem(24);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: rem(17);
+    line-height: rem(21);
+    color: var(--whiteColor);
+  }
+
+  // .constructor__btn--disabled
+
+  .constructor__btn--disabled {
+    background-color: var(--grayColor);
+  }
+
+  .constructor__btns {
+    display: inline-flex;
+    align-items: center;
+    column-gap: em(24);
+  }
+
+  .constructor__btn {}
+
+  .constructor__btn--back {
+    padding: 0;
+    background-color: transparent;
+    color: var(--blackColor);
+  }
+
+  .constructor__btn--next {
+    background-color: var(--orangeColor);
+  }

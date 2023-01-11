@@ -115,6 +115,50 @@ body.locked {
   }
 }
 
+.constructor__btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.5625rem;
+     -moz-column-gap: 0.5625rem;
+          column-gap: 0.5625rem;
+  padding: 0.75rem 1.6875rem 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.0625rem;
+  line-height: 1.3125rem;
+  color: var(--whiteColor);
+}
+
+.constructor__btn--disabled {
+  background-color: var(--grayColor);
+}
+
+.constructor__btns {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 1.5em;
+     -moz-column-gap: 1.5em;
+          column-gap: 1.5em;
+}
+
+.constructor__btn--back {
+  padding: 0;
+  background-color: transparent;
+  color: var(--blackColor);
+}
+
+.constructor__btn--next {
+  background-color: var(--orangeColor);
+}
+
 .constructor__header {
   margin-bottom: 3.1rem;
 }
@@ -389,26 +433,72 @@ body.locked {
   border-radius: 4px;
 }
 
-.constructor__btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.constructor__genders {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+  margin-bottom: 3.125em;
+}
+
+.constructor__gender {
+  border-radius: 8px;
+  background-color: var(--whiteColor);
+}
+
+.constructor__gender:hover .constructor__gender-name {
+  color: var(--orangeColor);
+}
+
+.constructor__gender-input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: -10;
+}
+
+.constructor__gender-input:checked ~ .constructor__gender-label .constructor__gender-name {
+  color: var(--orangeColor);
+}
+
+.constructor__gender-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 1.25rem;
+  border-radius: 0px 0px 8px 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.constructor__gender-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 0.5625rem;
-     -moz-column-gap: 0.5625rem;
-          column-gap: 0.5625rem;
-  padding: 0.75rem 1.6875rem 0.75rem 1.5rem;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 1.0625rem;
-  line-height: 1.3125rem;
-  color: var(--whiteColor);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 12.5rem;
+  min-height: 12.5rem;
+  max-height: 12.5rem;
 }
 
-.constructor__btn--disabled {
-  background-color: var(--grayColor);
+.constructor__gender-name {
+  padding: 0.9375em 0 1.25em;
+  border-top: 1px solid #E4E4E4;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.8125rem;
+  color: var(--blackColor);
 }
 
 @media (max-width: 991.98px) {
@@ -450,6 +540,14 @@ body.locked {
   .constructor__sports {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .constructor__sport {
+    background-color: var(--lightGrayColor);
+  }
+
+  .constructor__gender {
+    border: 1px solid #E4E4E4;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -473,6 +571,10 @@ body.locked {
   }
 
   .constructor__sports {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .constructor__genders {
     grid-template-columns: repeat(1, 1fr);
   }
 }
