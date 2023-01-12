@@ -465,6 +465,10 @@ body.locked {
   z-index: 1;
 }
 
+.constructor__sports[data-checked] ~ .constructor__btn {
+  background-color: var(--orangeColor);
+}
+
 .constructor__genders {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

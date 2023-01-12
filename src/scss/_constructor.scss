@@ -326,6 +326,7 @@
         content: '';
       }
     }
+
   }
 
   // .constructor__sport-label
@@ -403,6 +404,6 @@
 
 }
 
-.constructor-1--1 {}
-
-.container {}
+.constructor__sports[data-checked]~.constructor__btn {
+  background-color: var(--orangeColor);
+}
