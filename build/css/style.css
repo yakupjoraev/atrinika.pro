@@ -363,21 +363,30 @@ body.locked {
   z-index: -10;
 }
 
-.constructor__sport-input:checked ~ .constructor__sport-label .constructor__sport-img {
+.constructor__sport-input--card:checked ~ .constructor__sport-label .constructor__sport-img {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
 }
 
-.constructor__sport-input:checked ~ .constructor__sport-label .constructor__sport-name {
+.constructor__sport-input--card:checked ~ .constructor__sport-label .constructor__sport-name {
   color: var(--orangeColor);
 }
 
-.constructor__sport-input:checked ~ .constructor__sport-label .constructor__sport-position::after {
+.constructor__sport-input--input:checked ~ .constructor__sport-label .constructor__sport-img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.constructor__sport-input--input:checked ~ .constructor__sport-label .constructor__sport-name {
+  color: var(--orangeColor);
+}
+
+.constructor__sport-input--input:checked ~ .constructor__sport-label .constructor__sport-position::after {
   background-color: var(--orangeColor);
   border: 1px solid var(--orangeColor);
 }
 
-.constructor__sport-input:checked ~ .constructor__sport-label .constructor__sport-position::before {
+.constructor__sport-input--input:checked ~ .constructor__sport-label .constructor__sport-position::before {
   content: "";
 }
 
@@ -392,10 +401,14 @@ body.locked {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 1.25rem;
   border-radius: 0px 0px 8px 8px;
   text-align: center;
   cursor: pointer;
+}
+
+.constructor__sport-label + .constructor__sport-label {
+  padding-bottom: 1.25rem;
+  margin-top: 1.25rem;
 }
 
 .constructor__sport-img {
@@ -408,7 +421,6 @@ body.locked {
 }
 
 .constructor__sport-name {
-  margin-bottom: 1.25rem;
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1.8125rem;
