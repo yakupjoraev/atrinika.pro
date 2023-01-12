@@ -272,8 +272,8 @@
         color: var(--orangeColor);
       }
 
-      .constructor__sport-position {
-        opacity: 0;
+      .constructor__sport-position::after {
+        border: 1px solid rgba(255, 102, 0, 0.5);
       }
     }
 
@@ -299,8 +299,13 @@
         color: var(--orangeColor);
       }
 
-      .constructor__sport-position {
-        opacity: 0;
+      .constructor__sport-position::after {
+        background-color: var(--orangeColor);
+        border: 1px solid var(--orangeColor);
+      }
+
+      .constructor__sport-position::before {
+        content: '';
       }
     }
   }
@@ -357,6 +362,21 @@
       background-color: var(--whiteColor);
       border: 1px solid #ACACAC;
       border-radius: 4px;
+    }
+
+    &::before {
+      position: absolute;
+      display: block;
+      top: 2px;
+      left: 8px;
+      width: 6px;
+      height: 12px;
+      border: solid var(--whiteColor);
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      z-index: 1;
     }
   }
 
