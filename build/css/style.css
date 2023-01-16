@@ -537,6 +537,182 @@ body.locked {
   color: var(--blackColor);
 }
 
+.constructor__step--first-line-check {
+  background-color: var(--orangeColor);
+}
+
+.constructor__step-num--active-check {
+  background-color: var(--orangeColor);
+}
+
+.constructor__step-num--active-check::after {
+  background-color: rgba(255, 102, 0, 0.3);
+}
+
+.constructor__step-descr--active-check {
+  font-weight: 500;
+  color: var(--blackColor);
+}
+
+/* ARROWS */
+
+.constructor__slider-next,
+.constructor__slider-prev {
+  position: absolute;
+  cursor: pointer;
+}
+
+.constructor__slider {
+  position: relative;
+  max-width: 56.25em;
+  width: 100%;
+  height: 28.125em;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.constructor__slider-swiper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.constructor__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  -webkit-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+          transform: scale(0.7);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.constructor__slide.swiper-slide-active {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  z-index: 2;
+}
+
+.constructor__slide.swiper-slide-active .product-slide__right {
+  width: auto;
+  opacity: 1;
+}
+
+.constructor__slider-next {
+  top: 50%;
+  right: 0;
+  z-index: 2;
+}
+
+.constructor__slider-prev {
+  top: 50%;
+  left: 0;
+  z-index: 2;
+}
+
+.constructor__slider-pagination {
+  display: none;
+}
+
+.constructor__slider-pagination .swiper-pagination-bullet {
+  font-size: 0;
+  line-height: 0;
+  opacity: 1;
+  background-color: #E3E3E3;
+}
+
+.constructor__slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--orangeColor);
+}
+
+.constructor__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.constructor__price {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.4375rem;
+  letter-spacing: 0.01em;
+  color: var(--blackColor);
+}
+
+.product-slide__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.product-slide__front-top {
+  position: relative;
+}
+
+.product-slide__front-num {
+  position: absolute;
+}
+
+.product-slide__front-name {
+  position: absolute;
+}
+
+.product-slide__front-bottom {
+  position: relative;
+}
+
+.product-slide__front-bottom-num {
+  position: absolute;
+}
+
+.product-slide__right {
+  width: 0;
+  opacity: 0;
+}
+
+.product-slide__back-top {
+  position: relative;
+}
+
+.product-slide__back-name {
+  position: absolute;
+}
+
+.product-slide__back-surname {
+  position: absolute;
+}
+
+.product-slide__back-num {
+  position: absolute;
+}
+
+.product-slide__back-bottom {
+  position: relative;
+}
+
 @media (max-width: 991.98px) {
   .constructor__main {
     background-color: transparent;
@@ -612,5 +788,38 @@ body.locked {
 
   .constructor__genders {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .constructor__footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .constructor__price {
+    margin-bottom: 25px;
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+  }
+
+  .product-slide__front-img {
+    max-width: 100%;
+  }
+
+  .product-slide__bottom-img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .constructor__slider {
+    max-height: 25em;
+    height: auto;
+  }
+
+  .constructor__slider-pagination {
+    display: block;
   }
 }

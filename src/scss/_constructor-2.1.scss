@@ -1,0 +1,257 @@
+.constructor__step--first-line-check {
+  background-color: var(--orangeColor);
+}
+
+.constructor__step-num--active-check {
+  background-color: var(--orangeColor);
+
+  &::after {
+    background-color: rgba(255, 102, 0, 0.3);
+  }
+}
+
+.constructor__step-descr--active-check {
+  font-weight: 500;
+  color: var(--blackColor);
+}
+
+/* ARROWS */
+.constructor__slider-next,
+.constructor__slider-prev {
+  position: absolute;
+  cursor: pointer;
+}
+
+.constructor {
+
+  // .constructor__slider
+
+  &__slider {
+    position: relative;
+    max-width: em(900);
+    width: 100%;
+    height: em(450);
+    margin-bottom: 50px;
+    overflow: hidden;
+
+    @media (max-width: $breakpoint480) {
+      max-height: em(400);
+      height: auto;
+    }
+  }
+
+  // .constructor__slider--2-1
+
+  &__slider--2-1 {}
+
+  // .constructor__slider-swiper
+
+  &__slider-swiper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  // .constructor__slider-wrapper
+
+  &__slider-wrapper {}
+
+  // .constructor__slide
+
+  &__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    transform: scale(0.7);
+    transition: all .3s ease;
+
+    &.swiper-slide-active {
+      transform: scale(1);
+      z-index: 2
+    }
+
+    &.swiper-slide-active .product-slide__right {
+      width: auto;
+      opacity: 1;
+    }
+  }
+
+  // .constructor__slider-next
+
+  &__slider-next {
+    top: 50%;
+    right: 0;
+    z-index: 2;
+  }
+
+  // .constructor__slider-prev
+
+  &__slider-prev {
+    top: 50%;
+    left: 0;
+    z-index: 2;
+  }
+
+  &__slider-pagination {
+    display: none;
+
+    & .swiper-pagination-bullet {
+      font-size: 0;
+      line-height: 0;
+      opacity: 1;
+      background-color: #E3E3E3;
+
+      &.swiper-pagination-bullet-active {
+        background-color: var(--orangeColor);
+      }
+    }
+
+    @media (max-width: $breakpoint480) {
+      display: block;
+    }
+  }
+
+  // .constructor__footer
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint768) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  // .constructor__price
+
+  &__price {
+    font-weight: 600;
+    font-size: rem(32);
+    line-height: rem(39);
+    letter-spacing: 0.01em;
+    color: var(--blackColor);
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 25px;
+      font-size: rem(28);
+      line-height: rem(34);
+    }
+  }
+
+  // .constructor__btns
+
+  &__btns {}
+
+  // .constructor__btn
+
+  &__btn {}
+
+  // .constructor__btn--back
+
+  &__btn--back {}
+
+  // .constructor__btn--next
+
+  &__btn--next {}
+}
+
+.product-slide {
+
+  // .product-slide__body
+
+  &__body {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  // .product-slide__left
+
+  &__left {}
+
+  // .product-slide__front-top
+
+  &__front-top {
+    position: relative;
+  }
+
+  // .product-slide__front-img
+
+  &__front-img {
+
+    @media (max-width: $breakpoint768) {
+      max-width: 100%;
+    }
+  }
+
+  &__bottom-img {
+    @media (max-width: $breakpoint768) {
+      max-width: 80%;
+    }
+  }
+
+  // .product-slide__front-num
+
+  &__front-num {
+    position: absolute;
+  }
+
+  // .product-slide__front-name
+
+  &__front-name {
+    position: absolute;
+  }
+
+  // .product-slide__front-bottom
+
+  &__front-bottom {
+    position: relative;
+  }
+
+  // .product-slide__front-bottom-num
+
+  &__front-bottom-num {
+    position: absolute;
+  }
+
+  // .product-slide__right
+
+  &__right {
+    width: 0;
+    opacity: 0;
+  }
+
+  // .product-slide__back-top
+
+  &__back-top {
+    position: relative;
+  }
+
+  // .product-slide__back-name
+
+  &__back-name {
+    position: absolute;
+  }
+
+  // .product-slide__back-surname
+
+  &__back-surname {
+    position: absolute;
+  }
+
+  // .product-slide__back-num
+
+  &__back-num {
+    position: absolute;
+  }
+
+  // .product-slide__back-bottom
+
+  &__back-bottom {
+    position: relative;
+  }
+}
