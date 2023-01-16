@@ -1,0 +1,382 @@
+.inputfile:focus+label,
+.inputfile.has-focus+label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+
+.constructor {
+
+  // .constructor__selected
+
+  &__selected {
+    max-width: em(1245);
+    margin: 0 auto;
+  }
+}
+
+.selected {
+  padding-bottom: em(45);
+  border-bottom: 1px solid #BDBDBD;
+
+  // .selected__inner
+
+  &__inner {
+    display: flex;
+    column-gap: em(75);
+  }
+
+  // .selected__tshirt
+
+  &__tshirt {}
+
+  // .selected__tshirt-title
+
+  &__tshirt-title {
+    margin-bottom: em(40);
+    text-align: left;
+    align-self: flex-start;
+    font-weight: 600;
+    font-size: rem(24);
+    line-height: rem(29);
+    color: var(--blackColor);
+  }
+
+  // .selected__tshirt-columns
+
+  &__tshirt-columns {
+    display: flex;
+    column-gap: em(24);
+  }
+
+  // .selected__tshirt-column
+
+  &__tshirt-column {}
+
+  // .selected__tshirt-item
+
+  &__tshirt-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &:not(:last-child) {
+      margin-bottom: em(25);
+    }
+
+    & .ui-selectmenu-text {
+      font-weight: 500;
+      font-size: rem(16);
+      line-height: rem(19);
+      color: var(--blackColor);
+    }
+  }
+
+  // .selected__tshirt-item--color
+
+  &__tshirt-item--color {}
+
+  // .selected__tshirt-label
+
+  &__tshirt-label {
+    display: inline-flex;
+    margin-bottom: em(10);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: rem(15);
+    line-height: rem(18);
+    color: var(--blackColor);
+  }
+
+  // .selected__tshirt-select
+
+  &__tshirt-select {}
+
+  // .selected__tshirt-option
+
+  &__tshirt-option {}
+
+  // .selected__tshirt-option-descr
+
+  &__tshirt-option-descr {
+    font-weight: 500;
+    font-size: rem(16);
+    line-height: rem(19);
+    color: var(--blackColor);
+  }
+
+  // .selected__tshirt-item--collar
+
+  &__tshirt-item--collar {}
+
+  // .selected__tshirt-item--sleeve
+
+  &__tshirt-item--sleeve {}
+
+  // .selected__tshirt-download
+
+  &__tshirt-download {}
+
+  // .selected__tshirt-teams
+
+  &__tshirt-teams {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: em(20);
+  }
+
+  // .selected__tshirt-team
+
+  &__tshirt-team {
+    display: inline-flex;
+    margin-bottom: em(10);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: rem(15);
+    line-height: rem(18);
+    color: var(--blackColor);
+  }
+
+  // .selected__tshirt-input
+
+  &__tshirt-input {
+    padding: em(12) em(15);
+    background-color: var(--whiteColor);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    outline: transparent;
+
+    &::placeholder {
+      font-weight: 500;
+      font-size: rem(16);
+      line-height: rem(19);
+      color: #9E9E9E;
+    }
+
+    &:hover {
+      border: 1px solid #ACACAC;
+    }
+
+    &:active {
+      border: 1px solid #FF6600;
+    }
+
+    &:disabled {
+      user-select: none;
+      pointer-events: none;
+      background: #E5E5E5;
+      border: 1px solid #ACACAC;
+    }
+
+    &.js-error {
+      border: 1px solid #FF0000;
+      color: #FF0000;
+    }
+  }
+
+  // .selected__tshirt-deleted
+
+  &__tshirt-deleted {}
+
+  // .selected__tshirt-group
+
+  &__tshirt-group {
+
+    &:not(:last-child) {
+      margin-bottom: em(12);
+    }
+  }
+
+  // .selected__tshirt-checkbox
+
+  &__tshirt-checkbox {
+    position: absolute;
+    width: 0;
+    opacity: 0;
+    z-index: -100;
+
+    &:checked~.selected__tshirt-delete-label .selected__tshirt-square {
+      background-color: var(--orangeColor);
+      border: 1px solid var(--orangeColor);
+    }
+
+    &:checked~.selected__tshirt-delete-label .selected__tshirt-square::before {
+      content: '';
+    }
+
+
+  }
+
+  // .selected__tshirt-delete-label
+
+  &__tshirt-delete-label {
+    display: flex;
+    column-gap: 10px;
+
+    &:hover .selected__tshirt-square {
+      border: 1px solid var(--orangeColor);
+    }
+  }
+
+  // .selected__tshirt-square
+
+  &__tshirt-square {
+    position: relative;
+    width: rem(20);
+    height: rem(20);
+    background-color: var(--whiteColor);
+    border: 1px solid #ACACAC;
+    border-radius: 4px;
+
+    &::before {
+      position: absolute;
+      display: block;
+      top: 1px;
+      left: 7px;
+      width: 6px;
+      height: 12px;
+      border: solid var(--whiteColor);
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      z-index: 1;
+    }
+
+    &:disabled {
+      user-select: none;
+      pointer-events: none;
+      background-color: #E5E5E5;
+      border: 1px solid #ACACAC;
+    }
+  }
+
+  // .selected__tshirt-delete
+
+  &__tshirt-delete {}
+
+  // .selected__shorts
+
+  &__shorts {
+    padding-left: em(75);
+    border-left: 1px solid #BDBDBD;
+  }
+
+  // .selected__shorts-column
+
+  &__shorts-column {}
+
+  // .selected__tshirt-item--color-num
+
+  &__tshirt-item--color-num {}
+}
+
+.tshirt-option {
+
+  // .tshirt-option__color
+
+  &__color {}
+
+  // .tshirt-option__color--red
+
+  &__color--red {}
+}
+
+.download-logo {
+
+  // .download-logo__box
+
+  &__box {}
+
+  // .download-logo__inputfile
+
+  &__inputfile {
+    position: absolute;
+    width: 0;
+    opacity: 0;
+    z-index: -100;
+  }
+
+  // .download-logo__label
+
+  &__label {
+    display: flex;
+    column-gap: 12px;
+    cursor: pointer;
+
+    &:hover .download-logo__btn p {
+      color: var(--orangeColor);
+    }
+  }
+
+  // .download-logo__btn
+
+  &__btn {
+    text-align: left;
+
+    p {
+      font-weight: 400;
+      font-size: rem(16);
+      line-height: 140%;
+      color: var(--blackColor);
+    }
+
+    span {
+      font-weight: 400;
+      font-size: rem(12);
+      line-height: 140%;
+      color: var(--blackColor);
+    }
+
+    &.js-success {
+
+      span {
+        color: var(--orangeColor);
+      }
+    }
+
+    &.js-error {
+
+      p {
+        color: #FF0000;
+      }
+    }
+  }
+
+  // .download-logo__btn--error
+
+  &__btn--error {}
+}
+
+.inputfile-1 {}
+
+.js-error {}
+
+.num-option {
+
+  // .num-option__color
+
+  &__color {}
+
+  // .num-option__color--white
+
+  &__color--white {}
+}
+
+.shorts-option {
+
+  // .shorts-option__color
+
+  &__color {}
+
+  // .shorts-option__color--black
+
+  &__color--black {}
+}
+
+.inputfile-2 {}
+
+.download-logo--2 {
+  margin-bottom: em(60);
+}

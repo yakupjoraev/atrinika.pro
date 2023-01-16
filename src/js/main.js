@@ -45,5 +45,65 @@ let swiper = new Swiper('.constructor__slider-swiper', {
     }
   }
 
+});
 
+// custom input file
+
+/*
+  By Mushfiq Shishir, hello@mrshishir.me, www.mrshishir.me	
+*/
+
+"use strict";
+
+(function (document, window, index) {
+  var inputs = document.querySelectorAll(".inputfile");
+  Array.prototype.forEach.call(inputs, function (input) {
+    var label = input.nextElementSibling,
+      labelVal = label.innerHTML;
+
+    input.addEventListener("change", function (e) {
+      var fileName = "";
+      if (this.files && this.files.length > 1)
+        fileName = (this.getAttribute("data-multiple-caption") || "").replace(
+          "{count}",
+          this.files.length
+        );
+      else fileName = e.target.value.split("\\").pop();
+
+      let textBefore = "Успешно загружен";
+      let textafter = "Загрузить логотип";
+
+      if (fileName) {
+        label.querySelector(".download-logo__btn span").innerHTML = fileName;
+        label.querySelector(".download-logo__btn p").innerHTML = textBefore;
+        label.querySelector(".download-logo__btn").classList.add('js-success');
+      }
+
+      else {
+        label.innerHTML = labelVal;
+        label.querySelector(".download-logo__btn p").innerHTML = textafter;
+        label.querySelector(".download-logo__btn").classList.remove('js-success');
+      }
+    });
+
+    // Firefox bug fix
+    input.addEventListener("focus", function () {
+      input.classList.add("has-focus");
+    });
+    input.addEventListener("blur", function () {
+      input.classList.remove("has-focus");
+    });
+  });
+})(document, window, 0);
+
+
+
+//jquery ui
+$(function () {
+  $("#color-tshirt").selectmenu();
+  $("#collar-tshirt").selectmenu();
+  $("#sleeve-tshirt").selectmenu();
+  $("#color-num-tshirt").selectmenu();
+  $("#color-shorts").selectmenu();
+  $("#color-num-shorts").selectmenu();
 });
