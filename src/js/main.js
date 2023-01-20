@@ -106,4 +106,7 @@ $(function () {
   $("#color-num-tshirt").selectmenu();
   $("#color-shorts").selectmenu();
   $("#color-num-shorts").selectmenu();
+  $("#size-tshirt").selectmenu();
+  $("#size-shorts").selectmenu();
+  $("#size-sleeve").selectmenu();
 });

@@ -1,0 +1,281 @@
+.constructor {
+
+  // .constructor__size
+
+  &__size {}
+}
+
+.size {
+
+  // .size__inner
+
+  &__inner {
+    display: flex;
+  }
+
+  // .size__view
+
+  &__view {
+    display: flex;
+  }
+
+  // .size__view-front
+
+  &__view-front {}
+
+  // .size__view-back
+
+  &__view-back {}
+
+  // .size__date
+
+  &__date {}
+}
+
+.view-front {
+
+  // .view-front__top
+
+  &__top {}
+
+  // .view-front__top-img
+
+  &__top-img {}
+
+  // .view-front__top-num
+
+  &__top-num {}
+
+  // .view-front__top-name
+
+  &__top-name {}
+
+  // .view-front__bottom
+
+  &__bottom {}
+
+  // .view-front__bottom-img
+
+  &__bottom-img {}
+
+  // .view-front__bottom-num
+
+  &__bottom-num {}
+}
+
+.view-back {
+
+  // .view-back__top
+
+  &__top {}
+
+  // .view-back__top-img
+
+  &__top-img {}
+
+  // .view-back__top-comand
+
+  &__top-comand {}
+
+  // .view-back__top-surname
+
+  &__top-surname {}
+
+  // .view-back__top-num
+
+  &__top-num {}
+
+  // .view-back__bottom
+
+  &__bottom {}
+
+  // .view-back__bottom-img
+
+  &__bottom-img {}
+}
+
+.size-date {
+
+  // .size-date__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: em(25);
+    margin-bottom: em(25);
+  }
+
+  // .size-date__item
+
+  &__item {
+    display: flex;
+    align-items: flex-end;
+    column-gap: em(25);
+    row-gap: em(25);
+    text-align: left;
+
+    & .selected__tshirt-item:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  // .size-date__count
+
+  &__count {
+    flex: 0 1 20px;
+    padding: 6px 0;
+    font-weight: 500;
+    font-size: rem(16);
+    line-height: 140%;
+    letter-spacing: 0.01em;
+  }
+
+  // .size-date__surname
+
+  &__surname {
+    flex: 0 1 163px;
+  }
+
+  // .size-date__label
+
+  &__label {}
+
+  // .size-date__input
+
+  &__input {}
+
+  // .size-date__num
+
+  &__num {
+    flex: 0 1 103px;
+  }
+
+  // .size-date__tshort
+
+  &__tshort {
+    flex: 0 1 103px;
+    margin-bottom: 0;
+  }
+
+  // .size-date__shorts
+
+  &__shorts {
+    flex: 0 1 103px;
+    margin-bottom: 0;
+  }
+
+  // .size-date__sleeve
+
+  &__sleeve {
+    flex: 0 1 176px;
+    margin-bottom: 0;
+  }
+
+  // .size-date__delete
+
+  &__delete {
+    flex: 0 1 20px;
+    padding: 6px 0;
+  }
+
+  // .size-date__delete-btn
+
+  &__delete-btn {
+    background-color: transparent;
+  }
+
+  // .size-date__footer
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    column-gap: em(12);
+    row-gap: em(12);
+  }
+
+  // .size-date__added
+
+  &__added {
+    display: flex;
+    align-items: center;
+    column-gap: em(15);
+  }
+
+  // .size-date__icon
+
+  &__icon {}
+
+  // .size-date__text
+
+  &__text {
+    font-weight: 400;
+    font-size: rem(16);
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: var(--textColor);
+  }
+
+  // .size-date__table
+
+  &__table {
+    display: flex;
+    align-items: center;
+    column-gap: em(15);
+  }
+}
+
+.selected {
+
+  // .selected__tshirt-team
+
+  &__tshirt-team {}
+
+  // .selected__tshirt-input
+
+  &__tshirt-input {}
+
+  // .selected__tshirt-item
+
+  &__tshirt-item {}
+
+  // .selected__tshirt-label
+
+  &__tshirt-label {}
+
+  // .selected__tshirt-select
+
+  &__tshirt-select {}
+
+  // .selected__tshirt-option
+
+  &__tshirt-option {}
+
+  // .selected__tshirt-option-descr
+
+  &__tshirt-option-descr {}
+}
+
+
+.constructor__footer-size {
+  display: flex;
+  justify-content: space-between;
+
+  & .constructor__footer {
+    flex: 0 1 50%;
+    padding-top: 30px;
+    border-top: 1px solid #BDBDBD;
+  }
+}
+
+.constructor__footer-info {
+  flex: 0 1 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: em(10);
+  font-weight: 500;
+  font-size: rem(16);
+  line-height: rem(19);
+}
+
+.constructor__footer-info-img {}
