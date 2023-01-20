@@ -145,6 +145,7 @@
     color: var(--blackColor);
 
     @media (max-width: $breakpoint768) {
+      flex: 0 1 100%;
       margin-bottom: 25px;
       font-size: rem(28);
       line-height: rem(34);

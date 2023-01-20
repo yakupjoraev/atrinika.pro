@@ -889,6 +889,7 @@ body.locked {
 
 .selected {
   padding-bottom: 2.8125em;
+  margin-bottom: 1.875em;
   border-bottom: 1px solid #BDBDBD;
 }
 
@@ -899,6 +900,11 @@ body.locked {
   -webkit-column-gap: 4.6875em;
      -moz-column-gap: 4.6875em;
           column-gap: 4.6875em;
+}
+
+.selected__tshirt {
+  width: 100%;
+  padding-left: 1.25em;
 }
 
 .selected__tshirt-title {
@@ -919,6 +925,10 @@ body.locked {
   -webkit-column-gap: 1.5em;
      -moz-column-gap: 1.5em;
           column-gap: 1.5em;
+}
+
+.selected__tshirt-column {
+  width: 100%;
 }
 
 .selected__tshirt-item {
@@ -943,6 +953,57 @@ body.locked {
   font-size: 1rem;
   line-height: 1.1875rem;
   color: var(--blackColor);
+}
+
+.selected__tshirt-item .ui-button {
+  position: relative;
+  max-width: 22.3125rem;
+  width: 100%;
+  padding: 0.75rem 0.9375rem;
+  background-color: var(--whiteColor);
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-family: var(--fontMain);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: var(--blackColor);
+}
+
+.selected__tshirt-item .ui-button::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0.9375rem;
+  height: 0.4375rem;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  background-image: url("../img/input-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.selected__tshirt-item .ui-button:hover {
+  border: 1px solid rgba(255, 102, 0, 0.4);
+}
+
+.selected__tshirt-item .ui-button.ui-selectmenu-button-open {
+  border: 1px solid rgba(255, 102, 0, 0.4);
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+}
+
+.selected__tshirt-item .ui-button.ui-selectmenu-button-open::after {
+  -webkit-transform: translate(-50%) rotate(180deg);
+      -ms-transform: translate(-50%) rotate(180deg);
+          transform: translate(-50%) rotate(180deg);
 }
 
 .selected__tshirt-label {
@@ -991,11 +1052,21 @@ body.locked {
 }
 
 .selected__tshirt-input {
-  padding: 0.75em 0.9375em;
+  max-width: 22.3125rem;
+  width: 100%;
+  padding: 0.75rem 0.9375rem;
+  background-color: var(--whiteColor);
+  border-radius: 8px;
+  border: none;
   background-color: var(--whiteColor);
   border: 1px solid transparent;
   border-radius: 8px;
   outline: transparent;
+  font-family: var(--fontMain);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: var(--blackColor);
 }
 
 .selected__tshirt-input::-webkit-input-placeholder {
@@ -1124,8 +1195,39 @@ body.locked {
 }
 
 .selected__shorts {
+  width: 55%;
   padding-left: 4.6875em;
+  padding-right: 1.25em;
   border-left: 1px solid #BDBDBD;
+}
+
+.selected__shorts-column {
+  width: 100%;
+}
+
+.tshirt-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.download-logo {
+  outline: transparent;
+}
+
+.download-logo__box {
+  outline: none;
+}
+
+.download-logo__box:active {
+  outline: none;
+}
+
+.download-logo__box:focus {
+  outline: none;
 }
 
 .download-logo__inputfile {
@@ -1133,6 +1235,18 @@ body.locked {
   width: 0;
   opacity: 0;
   z-index: -100;
+  outline: transparent;
+  border: none;
+}
+
+.download-logo__inputfile:active {
+  outline: transparent;
+  border: none;
+}
+
+.download-logo__inputfile:focus {
+  outline: transparent;
+  border: none;
 }
 
 .download-logo__label {
@@ -1142,11 +1256,23 @@ body.locked {
   -webkit-column-gap: 12px;
      -moz-column-gap: 12px;
           column-gap: 12px;
+  outline: transparent;
+  border: none;
   cursor: pointer;
 }
 
 .download-logo__label:hover .download-logo__btn p {
   color: var(--orangeColor);
+}
+
+.download-logo__label:active {
+  outline: transparent;
+  border: none;
+}
+
+.download-logo__label:focus {
+  outline: transparent;
+  border: none;
 }
 
 .download-logo__btn {
@@ -1175,8 +1301,64 @@ body.locked {
   color: #FF0000;
 }
 
+.shorts-option__color {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 1.6875rem;
+  height: 1.6875rem;
+  margin-right: 0.9375em;
+  background-color: red;
+}
+
 .download-logo--2 {
   margin-bottom: 3.75em;
+}
+
+.ui-menu .ui-menu-item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.375rem 0.9375rem;
+  font-family: var(--fontMain);
+  font-weight: 500;
+  color: #9E9E9E;
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  border: none;
+  background-color: var(--whiteColor);
+  color: var(--blackColor);
+}
+
+.ui-widget.ui-widget-content {
+  border: 1px solid rgba(255, 102, 0, 0.4);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+}
+
+.inputfile.inputfile.has-focus + label,
+.inputfile:focus + label {
+  outline: transparent;
+}
+
+.tshirt-option__color.ui-selectmenu-icon.ui-icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  float: left;
+  width: 1.6875rem;
+  height: 1.6875rem;
+  margin-right: 0.9375em;
+  background-color: red;
 }
 
 @media (max-width: 991.98px) {
@@ -1242,6 +1424,72 @@ body.locked {
     -webkit-box-shadow: 0px 36px 23px -22px rgba(0, 0, 0, 0.08);
             box-shadow: 0px 36px 23px -22px rgba(0, 0, 0, 0.08);
   }
+
+  .selected__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 2.1875em;
+  }
+
+  .selected__tshirt {
+    padding-left: 0;
+    padding-bottom: 2.1875em;
+    border-bottom: 1px solid #BDBDBD;
+  }
+
+  .selected__tshirt-title {
+    margin-bottom: 1.875em;
+  }
+
+  .selected__tshirt-item .ui-button {
+    border: 1px solid #ACACAC;
+  }
+
+  .selected__tshirt-input {
+    border: 1px solid #BDBDBD;
+  }
+
+  .selected__shorts {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 3.125em;
+    border-left: none;
+    border-bottom: 1px solid #BDBDBD;
+  }
+
+  .selected__shorts-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+  }
+
+  .selected__shorts-column .selected__tshirt-group {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+
+  .selected__tshirt-item--color-num {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .selected__tshirt-item--color {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .download-logo--2 {
+    margin-bottom: 0;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1286,6 +1534,9 @@ body.locked {
   }
 
   .constructor__price {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
     margin-bottom: 25px;
     font-size: 1.75rem;
     line-height: 2.125rem;
@@ -1297,6 +1548,48 @@ body.locked {
 
   .product-slide__bottom-img {
     max-width: 80%;
+  }
+
+  .selected__tshirt-columns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 1.5625em;
+  }
+
+  .selected__tshirt-item .ui-button {
+    max-width: 100%;
+  }
+
+  .selected__tshirt-input {
+    max-width: 100%;
+  }
+
+  .selected__shorts {
+    padding-bottom: 2.5em;
+  }
+
+  .selected__shorts-column {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .selected__shorts-column .selected__tshirt-item,
+  .selected__shorts-column .selected__tshirt-download,
+  .selected__shorts-column .selected__tshirt-group {
+    margin-bottom: 0;
+  }
+
+  .selected__tshirt-item--color-num {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+  .download-logo--2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 
