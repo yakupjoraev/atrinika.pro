@@ -110,4 +110,7 @@ $(function () {
   $("#size-tshirt").selectmenu();
   $("#size-shorts").selectmenu();
   $("#size-sleeve").selectmenu();
+  $("#size-tshirt2").selectmenu();
+  $("#size-shorts2").selectmenu();
+  $("#size-sleeve2").selectmenu();
 });

@@ -404,3 +404,14 @@
 .constructor__sports[data-checked]~.constructor__btn {
   background-color: var(--orangeColor);
 }
+
+
+.constructor__from {
+  max-width: em(1245);
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (max-width: $breakpoint768) {
+    padding: 0;
+  }
+}
