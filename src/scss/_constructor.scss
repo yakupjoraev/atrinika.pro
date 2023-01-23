@@ -415,3 +415,25 @@
     padding: 0;
   }
 }
+
+.constructor__btn--next {
+
+  &:hover {
+    background-color: #D95700;
+  }
+
+  &:disabled {
+    background-color: #A1A1A1;
+  }
+}
+
+.constructor__btn--back {
+
+  &:hover {
+    color: var(--orangeColor);
+
+    & svg path {
+      stroke: var(--orangeColor);
+    }
+  }
+}
