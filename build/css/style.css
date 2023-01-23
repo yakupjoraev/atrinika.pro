@@ -209,7 +209,12 @@ body.locked {
 }
 
 .constructor__step {
+  cursor: pointer;
   z-index: 2;
+}
+
+.constructor__step:hover .constructor__step-descr {
+  color: var(--orangeColor);
 }
 
 .constructor__step-num {

@@ -96,7 +96,12 @@
   // .constructor__step
 
   &__step {
+    cursor: pointer;
     z-index: 2;
+
+    &:hover .constructor__step-descr {
+      color: var(--orangeColor);
+    }
   }
 
   // .constructor__step-num
