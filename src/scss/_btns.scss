@@ -15,6 +15,9 @@
   // .constructor__btn--disabled
 
   .constructor__btn--disabled {
+    user-select: none;
+    pointer-events: none;
+    cursor: default;
     background-color: var(--grayColor);
   }
 
@@ -34,4 +37,32 @@
 
   .constructor__btn--next {
     background-color: var(--orangeColor);
+  }
+
+  .constructor__btn--next {
+    transition: background-color 0.2s linear;
+
+    &:hover {
+      background-color: #D95700;
+    }
+
+    &:disabled {
+      background-color: #A1A1A1;
+    }
+  }
+
+  .constructor__btn--back {
+    transition: color 0.1s linear;
+
+    & svg path {
+      transition: stroke 0.1s linear;
+    }
+
+    &:hover {
+      color: var(--orangeColor);
+
+      & svg path {
+        stroke: var(--orangeColor);
+      }
+    }
   }

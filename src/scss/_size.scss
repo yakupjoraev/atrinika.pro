@@ -453,6 +453,16 @@
 
   &__delete-btn {
     background-color: transparent;
+
+    svg path {
+      transition: all 0.2s linear;
+    }
+
+    &:hover {
+      svg path {
+        stroke: var(--orangeColor);
+      }
+    }
   }
 
   // .size-date__footer
@@ -481,6 +491,12 @@
     align-items: center;
     column-gap: em(15);
     cursor: pointer;
+
+    &:hover {
+      & .size-date__text {
+        color: var(--orangeColor);
+      }
+    }
   }
 
   // .size-date__icon
@@ -495,6 +511,7 @@
     line-height: 140%;
     letter-spacing: 0.01em;
     color: var(--textColor);
+    transition: color 0.2s linear;
   }
 
   // .size-date__table
@@ -504,6 +521,12 @@
     align-items: center;
     column-gap: em(15);
     cursor: pointer;
+
+    &:hover {
+      & .size-date__text {
+        color: var(--orangeColor);
+      }
+    }
   }
 }
 
@@ -516,6 +539,13 @@
   font-weight: 500;
   font-size: rem(16);
   line-height: rem(19);
+  color: var(--blackColor);
+  cursor: pointer;
+  transition: color 0.2s linear;
+
+  &:hover {
+    color: var(--orangeColor);
+  }
 
   @media (max-width: $breakpoint1450) {
     justify-content: center;
@@ -523,6 +553,4 @@
 
 }
 
-.constructor__footer-info-img {
-  cursor: pointer;
-}
+.constructor__footer-info-img {}

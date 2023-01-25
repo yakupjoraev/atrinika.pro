@@ -96,11 +96,12 @@
   // .constructor__step
 
   &__step {
-    cursor: pointer;
+
     z-index: 2;
 
-    &:hover .constructor__step-descr {
+    &.hovered .constructor__step-descr:hover {
       color: var(--orangeColor);
+      cursor: pointer;
     }
   }
 
@@ -165,6 +166,7 @@
     white-space: nowrap;
     text-align: center;
     color: rgba(0, 0, 0, 0.5);
+    transition: color 0.2s linear;
 
     @media (max-width: $breakpoint992) {
       font-size: rem(18);
@@ -340,6 +342,7 @@
     border-radius: 0px 0px 8px 8px;
     text-align: center;
     cursor: pointer;
+
   }
 
   &__sport-label+.constructor__sport-label {
@@ -355,6 +358,7 @@
     border-radius: 8px 8px 0px 0px;
     margin-bottom: rem(15);
     filter: grayscale(1);
+    transition: filter 0.2s linear;
   }
 
   // .constructor__sport-name
@@ -364,6 +368,7 @@
     font-size: rem(24);
     line-height: rem(29);
     color: var(--blackColor);
+    transition: color 0.2s linear;
   }
 
   // .constructor__sport-position
@@ -375,6 +380,7 @@
     padding-left: rem(30);
     line-height: 140%;
     color: var(--blackColor);
+    transition: color 0.2s linear;
 
     &::after {
       content: '';
@@ -386,6 +392,7 @@
       background-color: var(--whiteColor);
       border: 1px solid #ACACAC;
       border-radius: 4px;
+      transition: border 0.2s linear, background-color 0.2s linear;
     }
 
     &::before {
@@ -406,9 +413,9 @@
 
 }
 
-.constructor__sports[data-checked]~.constructor__btn {
-  background-color: var(--orangeColor);
-}
+// .constructor__sports[data-checked]~.constructor__btn {
+//   background-color: var(--orangeColor);
+// }
 
 
 .constructor__from {
@@ -418,27 +425,5 @@
 
   @media (max-width: $breakpoint768) {
     padding: 0;
-  }
-}
-
-.constructor__btn--next {
-
-  &:hover {
-    background-color: #D95700;
-  }
-
-  &:disabled {
-    background-color: #A1A1A1;
-  }
-}
-
-.constructor__btn--back {
-
-  &:hover {
-    color: var(--orangeColor);
-
-    & svg path {
-      stroke: var(--orangeColor);
-    }
   }
 }

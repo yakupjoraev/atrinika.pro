@@ -110,8 +110,8 @@
       &::after {
         content: '';
         position: absolute;
-        right: 0;
-        top: 50%;
+        right: rem(5);
+        top: 45%;
         width: rem(15);
         height: rem(7);
         transform: translate(-50%);
@@ -303,9 +303,14 @@
   &__tshirt-delete-label {
     display: flex;
     column-gap: 10px;
+    cursor: pointer;
 
     &:hover .selected__tshirt-square {
       border: 1px solid var(--orangeColor);
+    }
+
+    &:hover .selected__tshirt-delete {
+      color: var(--orangeColor);
     }
   }
 
@@ -318,6 +323,7 @@
     background-color: var(--whiteColor);
     border: 1px solid #ACACAC;
     border-radius: 4px;
+    transition: border 0.2s linear, background-color 0.2s linear;
 
     &::before {
       position: absolute;
@@ -344,7 +350,9 @@
 
   // .selected__tshirt-delete
 
-  &__tshirt-delete {}
+  &__tshirt-delete {
+    transition: color 0.2s linear;
+  }
 
   // .selected__shorts
 

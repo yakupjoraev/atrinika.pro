@@ -16,7 +16,7 @@
     <div class="constructor__main">
       <div class="constructor__steps-container">
         <ul class="constructor__steps">
-          <li class="constructor__step">
+          <li class="constructor__step hovered">
             <div class="constructor__step-num constructor__step-num--active-check">
               <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.66675 7.56016L6.17957 12.0416L16.3334 1.95831" stroke="white" stroke-width="3"
@@ -32,7 +32,7 @@
 
           <li class="constructor__step constructor__step--first-line constructor__step--first-line-check"></li>
 
-          <li class="constructor__step">
+          <li class="constructor__step hovered">
 
             <div class="constructor__step-num constructor__step-num--active-check">
               <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,19 +42,19 @@
 
             </div>
 
-            <p class="constructor__step-descr constructor__step-descr--active">
+            <p class="constructor__step-descr constructor__step-descr--active-check">
               Внешний вид
             </p>
           </li>
 
-          <li class="constructor__step constructor__step--second-line"></li>
+          <li class="constructor__step constructor__step--second-line constructor__step--first-line-check"></li>
 
           <li class="constructor__step">
             <div class="constructor__step-num constructor__step-num--active">
               3
             </div>
 
-            <p class="constructor__step-descr">
+            <p class="constructor__step-descr constructor__step-descr--active">
               Персонализация
             </p>
           </li>
@@ -371,112 +371,6 @@
                 </div>
               </div>
 
-
-              <!-- <ul class="size-date__list">
-                <li class="size-date__item">
-                  <div class="size-date__count">2</div>
-
-                  <div class="size-date__surname">
-                    <label class="size-date__label selected__tshirt-team" for="surname-input2">фамилия</label>
-                    <input class="size-date__input selected__tshirt-input" type="text" name="surname2"
-                      id="surname-input2" placeholder="Иванов">
-                  </div>
-
-                  <div class="size-date__num">
-                    <label class="size-date__label selected__tshirt-team" for="num-input2">Номер</label>
-                    <input class="size-date__input selected__tshirt-input" type="text" name="surname2" id="num-input2"
-                      placeholder="10">
-                  </div>
-
-                  <div class="size-date__tshort selected__tshirt-item ">
-                    <label class="selected__tshirt-label" for="size-tshirt2">футболка</label>
-                    <select class="selected__tshirt-select" name="size-tshirt2" id="size-tshirt2">
-                      <option class="selected__tshirt-option tshirt-option">
-                        <p class="selected__tshirt-option-descr">S</p>
-                      </option>
-
-                      <option class="selected__tshirt-option tshirt-option">
-                        <p class="selected__tshirt-option-descr">M</p>
-                      </option>
-
-                      <option class="selected__tshirt-option tshirt-option" selected="selected">
-                        <p class="selected__tshirt-option-descr">L</p>
-                      </option>
-
-                      <option class="selected__tshirt-option tshirt-option">
-                        <p class="selected__tshirt-option-descr">XL</p>
-                      </option>
-
-                      <option class="selected__tshirt-option tshirt-option">
-                        <p class="selected__tshirt-option-descr">XXL</p>
-                      </option>
-                    </select>
-                  </div>
-
-                  <div class="size-date__shorts selected__tshirt-item ">
-                    <label class="selected__tshirt-label" for="size-shorts2">Шорты</label>
-                    <select class="selected__tshirt-select" name="size-shorts2" id="size-shorts2">
-                      <option class="selected__tshirt-option tshirt-option">
-                        <p class="selected__tshirt-option-descr">S</p>
-                      </option>
-
-                      <option class="selected__tshirt-option tshirt-option">
-                        <p class="selected__tshirt-option-descr">M</p>
-                      </option>
-
-                      <option class="selected__tshirt-option tshirt-option" selected="selected">
-                        <p class="selected__tshirt-option-descr">L</p>
-                      </option>
-
-                      <option class="selected__tshirt-option tshirt-option">
-                        <p class="selected__tshirt-option-descr">XL</p>
-                      </option>
-
-                      <option class="selected__tshirt-option tshirt-option">
-                        <p class="selected__tshirt-option-descr">XXL</p>
-                      </option>
-                    </select>
-                  </div>
-
-                  <div class="size-date__sleeve selected__tshirt-item ">
-                    <label class="selected__tshirt-label" for="size-sleeve2">Рукав</label>
-                    <select class="selected__tshirt-select" name="size-sleeve2" id="size-sleeve2">
-                      <option class="selected__tshirt-option tshirt-option">
-                        <p class="selected__tshirt-option-descr">Короткий</p>
-                      </option>
-
-                      <option class="selected__tshirt-option tshirt-option">
-                        <p class="selected__tshirt-option-descr">Короткий</p>
-                      </option>
-
-                      <option class="selected__tshirt-option tshirt-option" selected="selected">
-                        <p class="selected__tshirt-option-descr">Короткий</p>
-                      </option>
-
-                      <option class="selected__tshirt-option tshirt-option">
-                        <p class="selected__tshirt-option-descr">Короткий</p>
-                      </option>
-
-                      <option class="selected__tshirt-option tshirt-option">
-                        <p class="selected__tshirt-option-descr">Короткий</p>
-                      </option>
-                    </select>
-                  </div>
-
-                  <div class="size-date__delete">
-                    <button type="button" class="size-date__delete-btn">
-                      <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M15 4V14.2C15 15.8802 15 16.7202 14.673 17.362C14.3854 17.9265 13.9265 18.3854 13.362 18.673C12.7202 19 11.8802 19 10.2 19H7.8C6.11984 19 5.27976 19 4.63803 18.673C4.07354 18.3854 3.6146 17.9265 3.32698 17.362C3 16.7202 3 15.8802 3 14.2V4M1 4H17M13 4L12.7294 3.18807C12.4671 2.40125 12.3359 2.00784 12.0927 1.71698C11.8779 1.46013 11.6021 1.26132 11.2905 1.13878C10.9376 1 10.523 1 9.69357 1H8.30643C7.47705 1 7.06236 1 6.70951 1.13878C6.39792 1.26132 6.12208 1.46013 5.90729 1.71698C5.66405 2.00784 5.53292 2.40125 5.27064 3.18807L5 4"
-                          stroke="black" stroke-opacity="0.3" stroke-width="2" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                      </svg>
-                    </button>
-                  </div>
-                </li>
-              </ul> -->
-
-
             </div>
           </div>
         </div>
@@ -484,5 +378,8 @@
 
       </form>
     </div>
+
   </div>
+
+
 </div>
