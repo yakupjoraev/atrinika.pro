@@ -99,9 +99,13 @@
 
     z-index: 2;
 
-    &.hovered .constructor__step-descr:hover {
-      color: var(--orangeColor);
+    &.hovered:hover {
       cursor: pointer;
+    }
+
+    &.hovered:hover .constructor__step-descr {
+      color: var(--orangeColor);
+
     }
   }
 
