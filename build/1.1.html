@@ -87,17 +87,14 @@
 
       <form action="#" class="constructor__from constructor__form--1-1">
         <h2 class="constructor__from-title">
-          Какой вид спорта Вас интересует?
+          Выберите вид спорта
         </h2>
 
         <div class="constructor__sports">
           <div class="constructor__sport">
-            <input class="constructor__sport-input constructor__sport-input--card" type="radio" name="sport"
-              id="sport-1.1" value="1">
-            <input class="constructor__sport-input constructor__sport-input--input" type="radio" name="sport"
-              id="sport-1.2" value="2">
+            <input class="constructor__sport-input" type="radio" name="sport" id="sport-1" data-input>
 
-            <label class="constructor__sport-label" for="sport-1.1" data-label>
+            <label class="constructor__sport-label" for="sport-1" data-label>
               <img class="constructor__sport-img" src="./img/sport/sport-1.jpg" alt="Футбол">
 
               <h3 class="constructor__sport-name">
@@ -106,21 +103,13 @@
 
             </label>
 
-            <label class="constructor__sport-label" for="sport-1.2" data-label>
-
-              <div class="constructor__sport-position">
-                Вратарь
-              </div>
-            </label>
           </div>
 
           <div class="constructor__sport">
-            <input class="constructor__sport-input constructor__sport-input--card" type="radio" name="sport"
-              id="sport-2.1" value="3">
-            <input class="constructor__sport-input constructor__sport-input--input" type="radio" name="sport"
-              id="sport-2.2" value="4">
+            <input class="constructor__sport-input" type="radio" name="sport" id="sport-2" data-input>
 
-            <label class="constructor__sport-label" for="sport-2.1" data-label>
+
+            <label class="constructor__sport-label" for="sport-2" data-label>
               <img class="constructor__sport-img" src="./img/sport/sport-2.jpg" alt="Хоккей">
 
               <h3 class="constructor__sport-name">
@@ -128,21 +117,12 @@
               </h3>
             </label>
 
-            <label class="constructor__sport-label" for="sport-2.2" data-label>
-
-              <div class="constructor__sport-position">
-                Вратарь
-              </div>
-            </label>
           </div>
 
           <div class="constructor__sport">
-            <input class="constructor__sport-input constructor__sport-input--card" type="radio" name="sport"
-              id="sport-3.1" value="5">
-            <input class="constructor__sport-input constructor__sport-input--input" type="radio" name="sport"
-              id="sport-3.2" value="6">
+            <input class="constructor__sport-input" type="radio" name="sport" id="sport-3" data-input>
 
-            <label class="constructor__sport-label" for="sport-3.1" data-label>
+            <label class="constructor__sport-label" for="sport-3" data-label>
               <img class="constructor__sport-img" src="./img/sport/sport-3.jpg" alt="Баскетбол">
 
               <h3 class="constructor__sport-name">
@@ -150,21 +130,12 @@
               </h3>
             </label>
 
-
-            <label class="constructor__sport-label" for="sport-3.2" data-label>
-              <div class="constructor__sport-position">
-                Вратарь
-              </div>
-            </label>
           </div>
 
           <div class="constructor__sport">
-            <input class="constructor__sport-input constructor__sport-input--card" type="radio" name="sport"
-              id="sport-4.1" value="7">
-            <input class="constructor__sport-input constructor__sport-input--input" type="radio" name="sport"
-              id="sport-4.2" value="8">
+            <input class="constructor__sport-input" type="radio" name="sport" id="sport-4" data-input>
 
-            <label class="constructor__sport-label" for="sport-4.1" data-label>
+            <label class="constructor__sport-label" for="sport-4" data-label>
               <img class="constructor__sport-img" src="./img/sport/sport-4.jpg" alt="Волейбол">
 
               <h3 class="constructor__sport-name">
@@ -173,17 +144,61 @@
 
             </label>
 
-            <label class="constructor__sport-label" for="sport-4.2" data-label>
-              <div class="constructor__sport-position">
-                Либеро
-              </div>
-            </label>
-
           </div>
 
         </div>
 
-        <button class="constructor__btn constructor__btn--disabled">
+        <div class="constructor__types">
+          <h3 class="constructor__types-title">
+            Выберите тип игрока
+          </h3>
+
+          <div class="constructor__types-group">
+            <input class="constructor__types-input" type="radio" name="type-gamer" id="constructor__types-1">
+
+            <label class="constructor__types-label" for="constructor__types-1">
+              <div class="constructor__types-decor">
+
+              </div>
+
+              <p class="constructor__types-descr">
+                Обычный игрок
+              </p>
+            </label>
+          </div>
+
+          <div class="constructor__types-group">
+
+            <input class="constructor__types-input" type="radio" name="type-gamer" id="constructor__types-2">
+
+            <label class="constructor__types-label" for="constructor__types-2">
+              <div class="constructor__types-decor">
+
+              </div>
+
+              <p class="constructor__types-descr">
+                Вратарь
+              </p>
+            </label>
+          </div>
+
+          <div class="constructor__types-group">
+            <input class="constructor__types-input" type="radio" name="type-gamer" id="constructor__types-3" disabled>
+
+            <label class="constructor__types-label" for="constructor__types-3">
+              <div class="constructor__types-decor">
+
+              </div>
+
+              <p class="constructor__types-descr">
+                Либеро
+              </p>
+            </label>
+          </div>
+
+        </div>
+
+        <button class="constructor__btn" disabled>
           Далее
 
           <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">

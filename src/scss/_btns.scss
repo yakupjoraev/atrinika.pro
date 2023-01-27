@@ -6,20 +6,23 @@
     column-gap: rem(9);
     padding: rem(12) rem(27) rem(12) rem(24);
     border-radius: 8px;
+    background-color: var(--orangeColor);
     font-weight: 600;
     font-size: rem(17);
     line-height: rem(21);
     color: var(--whiteColor);
+
+    &:disabled {
+      user-select: none;
+      pointer-events: none;
+      cursor: default;
+      background-color: var(--grayColor);
+    }
   }
 
   // .constructor__btn--disabled
 
-  .constructor__btn--disabled {
-    user-select: none;
-    pointer-events: none;
-    cursor: default;
-    background-color: var(--grayColor);
-  }
+  .constructor__btn--disabled {}
 
   .constructor__btns {
     display: inline-flex;
