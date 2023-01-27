@@ -644,12 +644,24 @@ body.locked {
   cursor: pointer;
 }
 
+.constructor--2-1 .constructor__from-title {
+  margin-bottom: 0.625em;
+}
+
+.constructor--2-1 .constructor__steps-container {
+  margin-bottom: 2.5em;
+}
+
+.constructor--2-1 .constructor__steps {
+  margin-bottom: 0em;
+}
+
 .constructor__slider {
   position: relative;
   max-width: 56.25em;
   margin: 0 auto;
   width: 100%;
-  height: 28.125em;
+  height: 18.75em;
   margin-bottom: 50px;
   overflow: hidden;
 }
@@ -679,9 +691,9 @@ body.locked {
           align-items: center;
   height: auto;
   margin-bottom: -40px;
-  -webkit-transform: scale(0.6) !important;
-      -ms-transform: scale(0.6) !important;
-          transform: scale(0.6) !important;
+  -webkit-transform: scale(0.4) !important;
+      -ms-transform: scale(0.4) !important;
+          transform: scale(0.4) !important;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -765,20 +777,24 @@ body.locked {
 
 .product-slide__front-img {
   display: none;
+  max-width: 100%;
 }
 
 .product-slide__front-img.active {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .product-slide__bottom-img {
   display: none;
+  max-width: 80%;
 }
 
 .product-slide__bottom-img.active {
   display: block;
   margin: 0 auto;
+  max-width: 80%;
 }
 
 .product-slide__front-bottom {
@@ -805,6 +821,9 @@ body.locked {
           justify-content: flex-start;
   margin-right: 0;
   margin-left: -4.6875em;
+  -webkit-transform: scale(0.8) !important;
+      -ms-transform: scale(0.8) !important;
+          transform: scale(0.8) !important;
 }
 
 .product-slide__body--nothing {
@@ -2400,6 +2419,11 @@ a.ui-button:active,
     border: 1px solid #E4E4E4;
   }
 
+  .constructor__slide.swiper-slide-active {
+    -webkit-transform: scale(0.6) translateZ(0) !important;
+            transform: scale(0.6) translateZ(0) !important;
+  }
+
   .constructor__slide--nothing.swiper-slide-active {
     min-width: auto;
     -webkit-box-pack: center;
@@ -2596,11 +2620,6 @@ a.ui-button:active,
 
   .constructor__genders {
     grid-template-columns: repeat(1, 1fr);
-  }
-
-  .constructor__slide {
-    -webkit-transform: scale(1) translateZ(0) !important;
-            transform: scale(1) translateZ(0) !important;
   }
 
   .constructor__footer {
@@ -2843,6 +2862,11 @@ a.ui-button:active,
 
   .constructor__slider-wrapper {
     max-height: 25em;
+  }
+
+  .constructor__slide.swiper-slide-active {
+    -webkit-transform: scale(1) translateZ(0) !important;
+            transform: scale(1) translateZ(0) !important;
   }
 
   .constructor__slider-pagination {
