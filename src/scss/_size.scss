@@ -434,10 +434,14 @@
   line-height: rem(19);
   color: var(--blackColor);
   cursor: pointer;
-  transition: color 0.2s linear;
+  transition: color 0.1s linear;
 
   &:hover {
     color: var(--orangeColor);
+  }
+
+  &:hover .size__view-tooltip {
+    display: block;
   }
 
   @media (max-width: $breakpoint1450) {
@@ -446,9 +450,7 @@
 
 }
 
-.constructor__footer-info-img:hover~.size__view-tooltip {
-  display: block;
-}
+.constructor__footer-info-img {}
 
 .size__view-footer {
   position: relative;
