@@ -1,4 +1,5 @@
 .size__view-text {
+  margin: 0;
   margin-bottom: 20px;
   font-weight: 400;
   font-size: rem(16);
@@ -86,6 +87,8 @@
     align-items: flex-start;
     text-align: left;
     row-gap: em(10);
+    margin: 0;
+    padding: 0;
   }
 
   // .finish-date__attention-item
@@ -94,6 +97,7 @@
     position: relative;
     max-width: rem(548);
     padding-left: em(20);
+    margin: 0;
     font-weight: 500;
     font-size: rem(16);
     line-height: rem(19);
@@ -107,6 +111,7 @@
       left: 0;
       width: rem(7);
       height: rem(7);
+      margin-right: 0;
       border-radius: 100%;
       background-color: var(--orangeColor);
     }
@@ -119,6 +124,7 @@
   // .finish-date__form-title
 
   &__form-title {
+    margin: 0;
     margin-bottom: em(20);
     text-align: left;
     font-weight: 600;
@@ -283,6 +289,8 @@
     flex-direction: column;
     align-items: flex-start;
     row-gap: em(10);
+    margin: 0;
+    padding: 0;
     margin-bottom: em(30);
     counter-reset: list1;
   }
@@ -295,6 +303,8 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    margin: 0;
+    padding: 0;
     padding-left: em(17);
 
     &::before {
@@ -339,23 +349,33 @@
 
   // .composition-order__name
 
-  &__name {}
+  &__name {
+    margin: 0;
+  }
 
   // .composition-order__num
 
-  &__num {}
+  &__num {
+    margin: 0;
+  }
 
   // .composition-order__tshort-size
 
-  &__tshort-size {}
+  &__tshort-size {
+    margin: 0;
+  }
 
   // .composition-order__shorts-size
 
-  &__shorts-size {}
+  &__shorts-size {
+    margin: 0;
+  }
 
   // .composition-order__sleeve
 
-  &__sleeve {}
+  &__sleeve {
+    margin: 0;
+  }
 
   // .composition-order__sum
 
@@ -410,6 +430,7 @@
   // .composition-order__total-count
 
   &__total-count {
+    margin: 0;
     font-weight: 800;
     font-size: rem(20);
     line-height: rem(24);
@@ -432,6 +453,7 @@
   // .composition-order__total-price
 
   &__total-price {
+    margin: 0;
     font-weight: 800;
     font-size: rem(20);
     line-height: rem(24);

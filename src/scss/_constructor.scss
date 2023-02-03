@@ -13,6 +13,7 @@
   // .constructor__title
 
   &__title {
+    margin: 0;
     margin-bottom: 1.6rem;
     font-weight: 600;
     font-size: 2rem;
@@ -27,6 +28,7 @@
   // .constructor__descr
 
   &__descr {
+    margin: 0;
     max-width: rem(1360);
     letter-spacing: 0.01em;
     color: var(--textColor);
@@ -88,6 +90,7 @@
     margin: 0 auto;
     margin-bottom: em(50);
     padding-top: rem(24);
+    padding-left: 0;
     z-index: 3;
 
     @media (max-width: $breakpoint992) {}
@@ -96,8 +99,14 @@
   // .constructor__step
 
   &__step {
-
+    margin-bottom: 0;
+    line-height: inherit;
     z-index: 2;
+
+    &::before {
+      content: none;
+      display: none;
+    }
 
     &.hovered:hover {
       cursor: pointer;
@@ -105,7 +114,10 @@
 
     &.hovered:hover .constructor__step-descr {
       color: var(--orangeColor);
+    }
 
+    & p.constructor__step-descr {
+      display: inline-block;
     }
   }
 
@@ -165,6 +177,8 @@
   // .constructor__step-descr
 
   &__step-descr {
+    display: inline-block;
+    margin: 0;
     font-size: rem(20);
     line-height: rem(24);
     white-space: nowrap;
@@ -194,6 +208,7 @@
     left: rem(70);
     width: calc(33% - 70px);
     height: rem(4);
+    margin-bottom: 0;
     background-color: rgba(162, 162, 162, 0.3);
     z-index: 1;
   }
@@ -204,6 +219,7 @@
     left: 35%;
     width: calc(33% - 70px);
     height: rem(4);
+    margin-bottom: 0;
     background-color: rgba(162, 162, 162, 0.3);
     z-index: 1;
   }
@@ -215,6 +231,7 @@
     right: rem(100);
     width: calc(33% - 70px);
     height: rem(4);
+    margin-bottom: 0;
     background-color: rgba(162, 162, 162, 0.3);
     z-index: 1;
   }
@@ -230,6 +247,7 @@
   // .constructor__from-title
 
   &__from-title {
+    margin: 0;
     margin-bottom: 2.8rem;
     font-weight: 600;
     font-size: 1.75rem;
@@ -338,7 +356,8 @@
   // .constructor__sport-name
 
   &__sport-name {
-    padding-bottom: em(20);
+    padding-bottom: rem(20);
+    margin-bottom: 0;
     font-weight: 500;
     font-size: rem(24);
     line-height: rem(29);
@@ -366,6 +385,7 @@
 
 .constructor__types-title {
   flex: 0 1 100%;
+  margin: 0;
   font-weight: 600;
   font-size: 1.75rem;
   line-height: 2.1rem;
@@ -400,11 +420,13 @@
   display: flex;
   align-items: center;
   column-gap: em(10);
+  cursor: pointer;
 }
 
 .constructor__types-decor {
   width: rem(20);
   height: rem(20);
+  margin: 0;
   background-color: var(--whiteColor);
   border: 1px solid #ACACAC;
   border-radius: 100%;
@@ -417,8 +439,6 @@
   line-height: 140%;
   color: var(--blackColor);
 }
-
-
 
 
 

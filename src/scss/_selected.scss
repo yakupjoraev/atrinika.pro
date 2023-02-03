@@ -44,6 +44,7 @@
   // .selected__tshirt-title
 
   &__tshirt-title {
+    margin: 0;
     margin-bottom: em(40);
     text-align: left;
     align-self: flex-start;
@@ -99,6 +100,7 @@
       max-width: rem(357);
       width: 100%;
       padding: rem(12) rem(15);
+      margin-right: 0;
       background-color: var(--whiteColor);
       border-radius: 8px;
       border: 1px solid transparent;
@@ -352,6 +354,7 @@
   // .selected__tshirt-delete
 
   &__tshirt-delete {
+    margin: 0;
     transition: color 0.2s linear;
   }
 
@@ -506,6 +509,7 @@
     text-align: left;
 
     p {
+      margin: 0;
       font-weight: 400;
       font-size: rem(16);
       line-height: 140%;

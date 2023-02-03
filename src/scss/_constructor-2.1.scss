@@ -241,6 +241,8 @@
 
   &__front-bottom {
     position: relative;
+    max-width: 80%;
+    margin: 0 auto;
   }
 
   // .product-slide__right
@@ -261,6 +263,8 @@
 
   &__back-bottom {
     position: relative;
+    max-width: 80%;
+    margin: 0 auto;
   }
 }
 

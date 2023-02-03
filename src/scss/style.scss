@@ -17,3 +17,8 @@
 
 // Libs
 // @import './libs/swiper';
+
+
+.tab-pane.active {
+  flex-direction: column;
+}
