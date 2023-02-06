@@ -53,11 +53,16 @@
     }
   }
 
+  &__steps-scroll {
+    position: relative;
+  }
+
   &__steps-container {
+    position: relative;
     margin-bottom: rem(60);
 
     @media (max-width: $breakpoint992) {
-      overflow: auto;
+      overflow-x: auto;
       scrollbar-color: var(--orangeColor) #E3E3E3;
       scrollbar-width: thin;
 
@@ -76,7 +81,39 @@
         background: var(--orangeColor);
       }
     }
+
+    // @media (max-width: $breakpoint480) {
+
+    //   &::after {
+    //     content: '';
+    //     position: absolute;
+    //     right: 0;
+    //     bottom: 0;
+    //     width: 32px;
+    //     height: 32px;
+    //     background-image: url('../img/mobile-scroll.svg');
+    //   }
+    // }
   }
+
+  &__steps-arrow {
+    display: none;
+
+    @media (max-width: $breakpoint480) {
+      position: absolute;
+      right: 0;
+      bottom: -16px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 60px;
+      overflow: hidden;
+      z-index: 2;
+      background-color: var(--whiteColor);
+    }
+  }
+
+  &__steps-arrow-img {}
 
   // .constructor__steps
 

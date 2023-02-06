@@ -228,8 +228,17 @@ body.locked {
   text-align: center;
 }
 
+.constructor__steps-scroll {
+  position: relative;
+}
+
 .constructor__steps-container {
+  position: relative;
   margin-bottom: 3.75rem;
+}
+
+.constructor__steps-arrow {
+  display: none;
 }
 
 .constructor__steps {
@@ -675,10 +684,6 @@ body.locked {
 
 .constructor--2-1 .constructor__steps-container {
   margin-bottom: 2.5em;
-}
-
-.constructor--2-1 .constructor__steps {
-  margin-bottom: 0em;
 }
 
 .constructor__slider {
@@ -1551,6 +1556,7 @@ a.ui-button:active,
   width: 1.5625rem;
   height: 1.5625rem;
   background-color: red;
+  border: 1px solid #CDCDCD;
 }
 
 .select__dropdown .select__list .select__item {
@@ -1619,6 +1625,7 @@ a.ui-button:active,
   width: 1.5625rem;
   height: 1.5625rem;
   background-color: red;
+  border: 1px solid #CDCDCD;
 }
 
 .select__input.active {
@@ -1897,8 +1904,16 @@ a.ui-button:active,
   color: var(--orangeColor);
 }
 
-.constructor__footer-info:hover .size__view-tooltip {
+.constructor__footer-info span:hover ~ .size__view-tooltip {
   display: block;
+}
+
+.constructor__footer-info-img {
+  cursor: default;
+}
+
+.constructor__footer-info-img:hover ~ span {
+  color: var(--blackColor);
 }
 
 .size__view-footer {
@@ -2491,6 +2506,10 @@ a.ui-button:active,
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
   }
 
   .size__view-tooltip {
@@ -2534,7 +2553,7 @@ a.ui-button:active,
   }
 
   .constructor__steps-container {
-    overflow: auto;
+    overflow-x: auto;
     scrollbar-color: var(--orangeColor) #E3E3E3;
     scrollbar-width: thin;
   }
@@ -3019,6 +3038,25 @@ a.ui-button:active,
 }
 
 @media (max-width: 479.98px) {
+  .constructor__steps-arrow {
+    position: absolute;
+    right: 0;
+    bottom: -16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 60px;
+    overflow: hidden;
+    z-index: 2;
+    background-color: var(--whiteColor);
+  }
+
   .constructor__slider {
     max-height: 30em;
     height: auto;

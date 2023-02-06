@@ -440,17 +440,25 @@
     color: var(--orangeColor);
   }
 
-  &:hover .size__view-tooltip {
+  & span:hover~.size__view-tooltip {
     display: block;
   }
 
   @media (max-width: $breakpoint1450) {
     justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
   }
 
 }
 
-.constructor__footer-info-img {}
+.constructor__footer-info-img {
+  cursor: default;
+
+  &:hover~span {
+    color: var(--blackColor);
+  }
+}
 
 .size__view-footer {
   position: relative;
