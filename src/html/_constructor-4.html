@@ -96,20 +96,40 @@
                 Выбранный дизайн формы
               </p>
 
-              <div class="size__view-header">
+              <!-- 
+            Добовляем на контейнор классы для шрифтов  - для size__view-header
+            js-second-font - это CollegiateHeavyOutline
+            js-third-font - это RodchenkoCTT 
+             -->
+
+              <div class="size__view-header js-third-font">
                 <div class="size__view-front view-front">
                   <div class="view-front__top">
                     <img class="view-front__top-img" src="./img/slider/front-top--red.png" alt="верх">
+
+                    <p class="view-front__top-num">10</p>
+                    <img class="view-front__top-logo" src="./img/slider/primer-logo.jpg" alt="">
                   </div>
 
                   <div class="view-front__bottom">
                     <img class="view-front__bottom-img" src="./img/slider/front-bottom--black.png" alt="низ">
+
+                    <p class="view-front__bottom-num">10</p>
+                    <img class="view-front__bottom-logo" src="./img/slider/primer-logo.jpg" alt="">
                   </div>
                 </div>
 
                 <div class="size__view-back view-back">
                   <div class="view-back__top">
                     <img class="view-back__top-img" src="./img/slider/back-top--red.png" alt="верх">
+
+                    <!-- column-reverse - чтобы перевернуть top-container -->
+                    <div class="view-back__top-container">
+                      <p class="view-back__top-surname">фамилия</p>
+                      <p class="view-back__top-num">10</p>
+                      <p class="view-back__top-comand">команда</p>
+                    </div>
+
                   </div>
 
                   <div class="view-back__bottom">

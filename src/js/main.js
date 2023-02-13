@@ -98,6 +98,7 @@ $(function () {
   $("#size-tshirt2").selectmenu();
   $("#size-shorts2").selectmenu();
   $("#size-sleeve2").selectmenu();
+  $("#select-font").selectmenu();
 });
 
 // СЕЛЕКТЫ
@@ -207,7 +208,9 @@ let colorTshirt = new CustomSelector('#color-tshirt', data)
 let colorNumTshirt = new CustomSelector('#color-num-tshirt', data)
 let colorShorts = new CustomSelector('#color-shorts', data)
 let colorNumShorts = new CustomSelector('#color-num-shorts', data)
+let colorInscription = new CustomSelector('#color-inscription', data)
 colorTshirt.init()
 colorNumTshirt.init()
 colorShorts.init()
 colorNumShorts.init()
+colorInscription.init()
