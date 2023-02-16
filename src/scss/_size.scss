@@ -48,11 +48,11 @@
       margin-bottom: em(30);
     }
 
-    &.js-second-font {
+    &.js_second_font {
       font-family: var(--secondFont);
     }
 
-    &.js-third-font {
+    &.js_third_font {
       font-family: var(--thirdFont);
 
       & .view-back__top-num {
@@ -222,7 +222,7 @@
     flex-direction: column;
     gap: rem(20);
 
-    &.column-reverse {
+    &.column_reverse {
       flex-direction: column-reverse;
     }
 

@@ -71,14 +71,6 @@
     @media (max-width: $breakpoint480) {
       max-height: 25em;
     }
-
-    &.js-second-font {
-      font-family: var(--secondFont);
-    }
-
-    &.js-third-font {
-      font-family: var(--thirdFont);
-    }
   }
 
   .swiper-slide {
@@ -105,6 +97,14 @@
     &.swiper-slide-active .product-slide__right {
       width: auto;
       opacity: 1;
+    }
+
+    &.js_second_font {
+      font-family: var(--secondFont);
+    }
+
+    &.js_third_font {
+      font-family: var(--thirdFont);
     }
 
     @media (max-width: $breakpoint992) {
@@ -392,7 +392,7 @@
     left: 50%;
     transform: translateX(-50%);
 
-    &.column-reverse {
+    &.column_reverse {
       flex-direction: column-reverse;
     }
 
