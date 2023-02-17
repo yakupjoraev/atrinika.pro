@@ -1,7 +1,8 @@
 :root {
   --fontMain: "Inter", sans-serif;
-  --secondFont: "Collegiate Heavy Outline";
+  --secondFont: "Din Pro";
   --thirdFont: "Rodchenkoctt";
+  --fourthFont: "Bitcrusher Condensed";
   --blackColor: #000000;
   --titleColor: #222222;
   --textColor: #666666;
@@ -118,13 +119,20 @@ body.locked {
 }
 
 @font-face {
-  font-family: "Collegiate Heavy Outline";
-  src: url("../fonts/collegiateHeavyOutline_Medium.ttf");
+  font-family: "Din Pro";
+  src: url("../fonts/dinpro_bold.otf");
+  font-weight: 700;
 }
 
 @font-face {
   font-family: "Rodchenkoctt";
   src: url("../fonts/rodchenkoctt.ttf");
+}
+
+@font-face {
+  font-family: "Bitcrusher Condensed";
+  src: url("../fonts/BitcrusherCdEl-Regular.woff");
+  font-weight: 400;
 }
 
 .constructor__btn {
@@ -756,10 +764,33 @@ body.locked {
 
 .constructor__slide.js_second_font {
   font-family: var(--secondFont);
+  font-weight: 700;
 }
 
 .constructor__slide.js_third_font {
   font-family: var(--thirdFont);
+}
+
+.constructor__slide.js_third_font .product-slide__back-num {
+  margin-left: -1.5625rem;
+}
+
+.constructor__slide.js_fourth_font {
+  font-family: var(--fourthFont);
+  font-weight: 400;
+}
+
+.constructor__slide.js_fourth_font .product-slide__back-num {
+  margin-left: 0;
+  letter-spacing: normal;
+}
+
+.constructor__slide.js_fourth_font .product-slide__front-num {
+  letter-spacing: normal;
+}
+
+.constructor__slide.js_fourth_font .product-slide__front-bottom-num {
+  letter-spacing: normal;
 }
 
 .constructor__slider-next {
@@ -892,8 +923,8 @@ body.locked {
   bottom: 0.6875rem;
   right: 0.8125rem;
   font-weight: 400;
-  font-size: 3.25rem;
-  line-height: 3.375rem;
+  font-size: 2.625rem;
+  line-height: 2.75rem;
   letter-spacing: -0.125em;
   color: var(--whiteColor);
   opacity: 0;
@@ -1823,6 +1854,23 @@ a.ui-button:active,
   margin-left: -27px;
 }
 
+.size__view-header.js_fourth_font {
+  font-family: var(--fourthFont);
+}
+
+.size__view-header.js_fourth_font .view-front__top-num {
+  letter-spacing: normal;
+}
+
+.size__view-header.js_fourth_font .view-front__bottom-num {
+  letter-spacing: normal;
+}
+
+.size__view-header.js_fourth_font .view-back__top-num {
+  letter-spacing: normal;
+  margin-left: 0;
+}
+
 .view-front__top {
   position: relative;
 }
@@ -1877,8 +1925,8 @@ a.ui-button:active,
   bottom: 0.6875rem;
   right: 0.8125rem;
   font-weight: 400;
-  font-size: 3.25rem;
-  line-height: 3.375rem;
+  font-size: 2.625rem;
+  line-height: 2.75rem;
   letter-spacing: -0.125em;
   color: var(--whiteColor);
 }
